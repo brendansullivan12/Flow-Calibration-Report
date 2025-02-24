@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificate of Flow Meter Calibration Form</title>
+  <!-- Bootstrap CSS for a mobile-friendly layout -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .table-input { width: 100%; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <div class="text-center">
+      <img src="H2Solutions-01.jpg" alt="Company Logo" class="img-fluid" style="max-width: 200px;" />
+    </div>
+    <h2 class="text-center mt-3">Certificate of Flow Meter Calibration</h2>
+    <p class="text-center">
+      3043 Drane Field Rd, #1, Lakeland, FL 33811 | Tel: (863) 588-0117 | Email: admin@h2solutions.org
+    </p>
+    
+    <form id="calibrationForm">
+      <!-- Header Fields -->
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label for="calibDate" class="form-label">Date:</label>
+          <input type="date" class="form-control" id="calibDate" name="calibDate" />
+        </div>
+        <div class="col-md-3">
+          <label for="po" class="form-label">P.O. #:</label>
+          <input type="text" class="form-control" id="po" name="po" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="customer" class="form-label">Customer:</label>
+          <input type="text" class="form-control" id="customer" name="customer" />
+        </div>
+        <div class="col-md-4">
+          <label for="facility" class="form-label">Facility:</label>
+          <input type="text" class="form-control" id="facility" name="facility" />
+        </div>
+        <div class="col-md-4">
+          <label for="location" class="form-label">Location:</label>
+          <input type="text" class="form-control" id="location" name="location" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label for="range" class="form-label">Range:</label>
+          <input type="text" class="form-control" id="range" name="range" />
+        </div>
+        <div class="col-md-3">
+          <label for="manufacturer" class="form-label">Manufacturer:</label>
+          <input type="text" class="form-control" id="manufacturer" name="manufacturer" />
+        </div>
+        <div class="col-md-3">
+          <label for="type" class="form-label">Type:</label>
+          <input type="text" class="form-control" id="type" name="type" />
+        </div>
+        <div class="col-md-3">
+          <label for="model" class="form-label">Model #:</label>
+          <input type="text" class="form-control" id="model" name="model" />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="serial" class="form-label">Serial #:</label>
+        <input type="text" class="form-control" id="serial" name="serial" />
+      </div>
+      
+      <!-- Volumetric Reading Table -->
+      <h5 class="mt-4">Volumetric Reading / Test Meter Reading / Difference / Percent of Error</h5>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Volumetric Reading</th>
+            <th>Test Meter Reading</th>
+            <th>Difference</th>
+            <th>Percent of Error</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="table-input" id="volReading1" /></td>
+            <td><input type="text" class="table-input" id="testReading1" /></td>
+            <td><input type="text" class="table-input" id="difference1" /></td>
+            <td><input type="text" class="table-input" id="percentError1" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="table-input" id="volReading2" /></td>
+            <td><input type="text" class="table-input" id="testReading2" /></td>
+            <td><input type="text" class="table-input" id="difference2" /></td>
+            <td><input type="text" class="table-input" id="percentError2" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="table-input" id="volReading3" /></td>
+            <td><input type="text" class="table-input" id="testReading3" /></td>
+            <td><input type="text" class="table-input" id="difference3" /></td>
+            <td><input type="text" class="table-input" id="percentError3" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="table-input" id="volReading4" /></td>
+            <td><input type="text" class="table-input" id="testReading4" /></td>
+            <td><input type="text" class="table-input" id="difference4" /></td>
+            <td><input type="text" class="table-input" id="percentError4" /></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="table-input" id="volReading5" /></td>
+            <td><input type="text" class="table-input" id="testReading5" /></td>
+            <td><input type="text" class="table-input" id="difference5" /></td>
+            <td><input type="text" class="table-input" id="percentError5" /></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Totalizer Check -->
+      <h5 class="mt-4">Totalizer Check</h5>
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label for="duration" class="form-label">Duration:</label>
+          <input type="text" class="form-control" id="duration" name="duration" />
+        </div>
+        <div class="col-md-3">
+          <label for="startTime" class="form-label">Start:</label>
+          <input type="text" class="form-control" id="startTime" name="startTime" />
+        </div>
+        <div class="col-md-3">
+          <label for="stopTime" class="form-label">Stop:</label>
+          <input type="text" class="form-control" id="stopTime" name="stopTime" />
+        </div>
+        <div class="col-md-3">
+          <label for="totalCount" class="form-label">Total Count:</label>
+          <input type="text" class="form-control" id="totalCount" name="totalCount" />
+        </div>
+      </div>
+      
+      <!-- Totalized Flow Test -->
+      <h5 class="mt-4">Totalized Flow Test</h5>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="totalizedMeter" class="form-label">Meter:</label>
+          <input type="text" class="form-control" id="totalizedMeter" name="totalizedMeter" />
+        </div>
+        <div class="col-md-4">
+          <label for="totalizedDifference" class="form-label">Difference:</label>
+          <input type="text" class="form-control" id="totalizedDifference" name="totalizedDifference" />
+        </div>
+        <div class="col-md-4">
+          <label for="totalizedPercentError" class="form-label">Percentage of Error:</label>
+          <input type="text" class="form-control" id="totalizedPercentError" name="totalizedPercentError" />
+        </div>
+      </div>
+      
+      <!-- Corrections and Comments -->
+      <div class="mb-3">
+        <label for="corrections" class="form-label">Corrections:</label>
+        <textarea class="form-control" id="corrections" name="corrections" rows="2"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comments:</label>
+        <textarea class="form-control" id="comments" name="comments" rows="2"></textarea>
+      </div>
+      
+      <!-- Technician Section -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="technician" class="form-label">Technician:</label>
+          <input type="text" class="form-control" id="technician" name="technician" />
+        </div>
+        <div class="col-md-6">
+          <label for="techDate" class="form-label">Date:</label>
+          <input type="date" class="form-control" id="techDate" name="techDate" />
+        </div>
+      </div>
+      
+      <!-- Generate PDF Button -->
+      <div class="text-center mb-5">
+        <button type="button" id="generatePDF" class="btn btn-success">Generate PDF</button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Include jsPDF and Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    document.getElementById('generatePDF').addEventListener('click', function() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF('p', 'mm', 'letter');
+
+      // Use the provided Base64 string for the logo image.
+      var logoBase64 = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/4QCCRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAABJADAAIAAAAUAAAAUJAEAAIAAAAUAAAAZJKRAAIAAAADMDAAAJKSAAIAAAADMDAAAAAAAAAyMDIyOjA3OjE1IDIyOjIwOjQzADIwMjI6MDc6MTUgMjI6MjA6NDMAAAD/4QGcaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyI+PHhtcDpDcmVhdGVEYXRlPjIwMjItMDctMTVUMjI6MjA6NDM8L3htcDpDcmVhdGVEYXRlPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz7/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCACeAN8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6pooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=";
+      
+      // Embed the logo in the PDF (x, y, width, height in mm)
+      doc.addImage(logoBase64, 'JPEG', 10, 10, 40, 20);
+
+      // Header text (centered)
+      doc.setFontSize(12);
+      doc.setFont("Helvetica", "bold");
+      doc.text("Certificate of Flow Meter Calibration", 105, 20, { align: 'center' });
+      doc.setFontSize(10);
+      doc.setFont("Helvetica", "normal");
+      doc.text("3043 Drane Field Rd, #1, Lakeland, FL 33811", 105, 27, { align: 'center' });
+      doc.text("Tel: (863) 588-0117 | Email: admin@h2solutions.org", 105, 33, { align: 'center' });
+
+      let y = 40;
+      const lineSpacing = 7;
+      
+      // Header fields
+      doc.setFont("Helvetica", "bold");
+      doc.text("Date:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('calibDate').value || "________", 35, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("P.O. #:", 80, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('po').value || "________", 105, y);
+      y += lineSpacing;
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Customer:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('customer').value || "________", 35, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Facility:", 80, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('facility').value || "________", 105, y);
+      y += lineSpacing;
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Location:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('location').value || "________", 35, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Range:", 80, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('range').value || "________", 105, y);
+      y += lineSpacing;
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Manufacturer:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('manufacturer').value || "________", 45, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Type:", 80, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('type').value || "________", 95, y);
+      y += lineSpacing;
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Model #:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('model').value || "________", 35, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Serial #:", 80, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('serial').value || "________", 105, y);
+      y += lineSpacing + 3;
+      
+      // Table for Volumetric Readings
+      doc.setFont("Helvetica", "bold");
+      doc.text("Volumetric Reading", 10, y);
+      doc.text("Test Meter Reading", 60, y);
+      doc.text("Difference", 110, y);
+      doc.text("Percent of Error", 150, y);
+      y += 2;
+      doc.line(10, y, 200, y);
+      y += lineSpacing;
+      
+      for (let i = 1; i <= 5; i++) {
+        doc.setFont("Helvetica", "normal");
+        let vol = document.getElementById('volReading' + i).value || " ";
+        let test = document.getElementById('testReading' + i).value || " ";
+        let diff = document.getElementById('difference' + i).value || " ";
+        let perc = document.getElementById('percentError' + i).value || " ";
+        doc.text(vol, 10, y);
+        doc.text(test, 60, y);
+        doc.text(diff, 110, y);
+        doc.text(perc, 150, y);
+        y += lineSpacing;
+      }
+      
+      y += 3;
+      
+      // Totalizer Check
+      doc.setFont("Helvetica", "bold");
+      doc.text("Totalizer Check", 10, y);
+      y += lineSpacing;
+      doc.setFont("Helvetica", "bold");
+      doc.text("Duration:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('duration').value || "________", 35, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Start:", 80, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('startTime').value || "________", 95, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Stop:", 130, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('stopTime').value || "________", 145, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Total Count:", 170, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('totalCount').value || "________", 190, y);
+      y += lineSpacing + 3;
+      
+      // Totalized Flow Test
+      doc.setFont("Helvetica", "bold");
+      doc.text("Totalized Flow Test", 10, y);
+      y += lineSpacing;
+      doc.setFont("Helvetica", "bold");
+      doc.text("Meter:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('totalizedMeter').value || "________", 30, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Difference:", 70, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('totalizedDifference').value || "________", 95, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Percentage of Error:", 130, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('totalizedPercentError').value || "________", 170, y);
+      y += lineSpacing + 3;
+      
+      // Corrections and Comments
+      doc.setFont("Helvetica", "bold");
+      doc.text("Corrections:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('corrections').value || "________", 40, y);
+      y += lineSpacing;
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Comments:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('comments').value || "________", 35, y);
+      y += lineSpacing + 3;
+      
+      // Technician Section
+      doc.setFont("Helvetica", "bold");
+      doc.text("Technician:", 10, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('technician').value || "________", 40, y);
+      
+      doc.setFont("Helvetica", "bold");
+      doc.text("Date:", 100, y);
+      doc.setFont("Helvetica", "normal");
+      doc.text(document.getElementById('techDate').value || "________", 115, y);
+      
+      doc.save("Certificate_of_Flow_Meter_Calibration.pdf");
+      
+      // Reset the form after PDF generation
+      document.getElementById('calibrationForm').reset();
+    });
+  </script>
+</body>
+</html>
